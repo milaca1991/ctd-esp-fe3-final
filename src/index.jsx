@@ -14,16 +14,7 @@ import Home from './Routes/Home';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<App/>} />
-      <Route path='/Home' element={<Home/>} />
-      <Route path='/Contact' element={<Contact/>} />
-      <Route path='/Detail' element={<Detail/>} />
-      <Route path='/Favs' element={<Favs/>} />
-      </Routes>
-
-      </BrowserRouter>
+ <App />
   </React.StrictMode>
 );
 

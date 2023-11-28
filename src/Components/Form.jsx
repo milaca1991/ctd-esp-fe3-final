@@ -41,11 +41,7 @@ const Form = () => {
     return (
         <>
 
-          {enviado ? (
-                <p>
-                  Gracias {nombre}, te contactaremos lo antes posible vía mail
-                </p>
-              ) : (
+        
        
             <form
                 onSubmit={handleSubmit}
@@ -77,7 +73,14 @@ const Form = () => {
                 />
 
             </form>
-             )}
+
+            {enviado && (
+      <p>
+        Gracias {nombre}, te contactaremos lo antes posible vía mail
+      </p>
+    )}
+
+             
         </>
     )
 }
