@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 
 const Card = ({ name, username, id }) => {
@@ -10,9 +11,11 @@ const Card = ({ name, username, id }) => {
   return (
     <div className="card">
         {/* En cada card deberan mostrar en name - username y el id */}
+        <Link to={`/detail/${id}`}>
         <h2>{name}</h2>
         <p>Username: {username}</p>
         <p>ID: {id}</p>
+        </Link>
 
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
 

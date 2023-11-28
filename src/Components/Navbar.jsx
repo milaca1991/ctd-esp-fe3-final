@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav>
    
               <Link to="/Home"> Home</Link>
-              <Link to="/Detail"> Detail</Link>
+              
               <Link to="/Favs"> Favs</Link>
               <Link to="/Contact"> Contact</Link>
 
